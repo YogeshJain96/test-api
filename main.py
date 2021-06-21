@@ -27,13 +27,13 @@ last_updated: "{ist_now.isoformat()}"
 print(md_content)
 
 # Writing to md file
-with open("sample.md", "w") as outfile:
+with open("output_files/sample.md", "w") as outfile:
     outfile.write(md_content)
 # Append time
-with open("timeline.md", "a") as outfile:
-    outfile.write(ist_now.isoformat()+'\n')
+with open("output_files/timeline.md", "a") as outfile:
+    outfile.write(ist_now.isoformat()+'<br>\n')
 
 # Print timeline
-timeline_file = open("timeline.md","r")
+timeline_file = open("output_files/timeline.md","r")
 print ("Output of timeline.md")
 print (timeline_file.readlines())
