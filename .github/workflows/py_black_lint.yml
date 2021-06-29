@@ -1,0 +1,18 @@
+# This is a basic GitHub action to run black on your python repository
+
+name: py_black_lint
+
+on:
+  push:
+    
+  workflow_dispatch:
+  
+jobs:
+  py_black_lint:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Black Check
+        uses: jpetrucciani/black-check@20.8b1
