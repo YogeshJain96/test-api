@@ -18,4 +18,4 @@ jobs:
         uses: piotrpawlaczek/python-blacken@release/stable
         with:
           path: '.'
-          only-check: 'no'
+          only-check: 'yes'
